@@ -14,8 +14,7 @@
     bot.on('message', function (message){
         if(message.channel.name === 'bot'){
             if(message.content === '!help')   {
-                message.delete
-                message.channel.sendMessage('Voici la liste des commandes disponible : !help ; !yt')
+                message.reply('Voici la liste des commandes disponible : !help ; !yt')
             }
         }
     })
