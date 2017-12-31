@@ -1,4 +1,4 @@
-import { Message } from "discord.js";
+
 
     const Discord = require("discord.js");
 
