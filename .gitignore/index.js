@@ -27,6 +27,6 @@
         }
     })
     bot.on('guildMemberAdd', function (membre){
-        membre.guild.sendMessage(membre.displayName + ' à était bannit !')
+        membre.sendMessage(membre.displayName + ', tu à était ban !')
     })
 
