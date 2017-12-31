@@ -21,6 +21,10 @@
             }
         }
         if(message.channel.name === 'music'){
+            if(message.content === '.music'){
+                message.delete(message.author)
+               message.chanel.sendMessage('Fait .music play <lien/nom>')
+               }
             if(message.content === '!play'){
                 message.channel.sendMessage('Fonction bientôt disponible !')
             }
