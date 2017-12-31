@@ -20,5 +20,10 @@
                 message.channel.sendMessage('Voici la chaine youtube de GarrysGaming : https://www.youtube.com/channel/UCu80F8H_BDuVjIrXnvWUjew')
             }
         }
+        if(message.channel.name === 'music'){
+            if(message.content === '!play'){
+                message.channel.sendMessage('.music play https://www.youtube.com/watch?v=ihOvW9dpMKw&list=PLcfgpjzMYTNWHTHjKBKXkxQki7FnZopFq')
+            }
+        }
     })
 
