@@ -27,6 +27,14 @@
         }
     })
     bot.on('guildMemberAdd', function (membre){
-        membre.sendMessage('Bienvenue ' + membre.displayName + ' sur le discord de GarrysGaming')
+        membre.sendMessage('Bienvenue ' + membre.displayName + ' sur le discord de GarrysGaming !')
+    })
+
+    bot.on('guildBanAdd', function (membre){
+        membre.sendMessage(membre.displayName + ', tu à était ban du discord de GarrysGaming !')
+    })
+
+    bot.on('guildBanRemove', function (membre){
+        membre.sendMessage(membre.displayName + ', tu à était deban du discord de GarrysGaming!')
     })
 
