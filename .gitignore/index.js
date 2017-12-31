@@ -2,7 +2,8 @@
 
     const Discord = require("discord.js");
 
-
+    var yt = require('./youtube_plugin')
+    var youtube_plugin = new yt
 
     var bot = new Discord.Client()
 
@@ -25,6 +26,9 @@
             }
         }
         if(message.channel.name === 'music'){
+            if(message.content.startsWith('!youtube')){
+                youtube_plugin.respond(message.content, message.channel, Client)
+            }
             if(message.content === '!play'){
                 message.delete(message.author)
                 message.channel.sendMessage('Fonction bientôt disponible !')
