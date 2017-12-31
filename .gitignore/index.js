@@ -27,6 +27,6 @@
         }
     })
     bot.on('guildMemberAdd', function (membre){
-        membre.sendMessage(membre.displayName + ', tu à était ban !')
+        membre.sendMessage('Bienvenue ' + membre.displayName + ' sur le discord de GarrysGaming')
     })
 
