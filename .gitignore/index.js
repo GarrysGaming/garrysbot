@@ -6,14 +6,16 @@
 
     bot.on("ready", function(){
         bot.user.setGame("GarrysBot, !help")
-        console.log('Connection reussi')
+        console.log('Connection reussi avec succes')
     });
 
     bot.login("Mzk2MzA5OTU0NTUxODczNTM3.DSqMUw.AmWxggPBMEbaWsToNfalrdd3gHQ")
 
-
-    bot.on('guildMemberAdd', function (membre){
-        membre.createDM.then(function(chanel) {
-            return chanel.send('Bienvenue à ' + membre.displayName)
-        }).catch(console.error)
+    bot.on('message', function (message){
+        if(message.channel.name === 'bot'){
+            if(message.content === '!help')   {
+                message.delete
+                message.channel.sendMessage('Voici la liste des commandes disponible : !help ; !yt')
+            }
+        }
     })
