@@ -10,7 +10,7 @@ import { Message } from "discord.js";
 
     bot.login("Mzk2MzA5OTU0NTUxODczNTM3.DSqMUw.AmWxggPBMEbaWsToNfalrdd3gHQ");
 
-    bot.on('message', Message =>{
+    bot.on('message', message =>{
         if(Message.content == "!help"){
             Message.reply(" : Voici la liste des commandes : !help ; !yt");
         }
