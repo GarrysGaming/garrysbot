@@ -10,11 +10,6 @@
 
     bot.login("Mzk2MzA5OTU0NTUxODczNTM3.DSqMUw.AmWxggPBMEbaWsToNfalrdd3gHQ")
 
-    bot.on('message', message =>{
-        if(Message.content === '!help'){
-            return Message.reply(' : Voici la liste des commandes : !help ; !yt')
-        }
-    })
 
     bot.on('guildMemberAdd', function (membre){
         membre.createDM.then(function(chanel) {
