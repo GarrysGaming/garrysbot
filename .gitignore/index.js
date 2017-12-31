@@ -22,8 +22,11 @@
         }
         if(message.channel.name === 'music'){
             if(message.content === '!play'){
-                message.channel.sendMessage('.music play https://www.youtube.com/watch?v=ihOvW9dpMKw&list=PLcfgpjzMYTNWHTHjKBKXkxQki7FnZopFq')
+                message.channel.sendMessage('Fonction bientôt disponible !')
             }
         }
+    })
+    bot.on('guildMemberAdd', function (membre){
+        membre.guild.sendMessage(membre.displayName + ' à était bannit !')
     })
 
