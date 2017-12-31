@@ -16,5 +16,9 @@
             if(message.content === '!help')   {
                 message.channel.sendMessage('Voici la liste des commandes disponible : !help ; !yt')
             }
+            if(message.content === '!yt'){
+                message.channel.sendMessage('Voici la chaine youtube de GarrysGaming : https://www.youtube.com/channel/UCu80F8H_BDuVjIrXnvWUjew')
+            }
         }
     })
+
